@@ -1,0 +1,72 @@
+.bimg{
+    background-size: cover;
+    min-height: 85vh;
+    position: relative;
+    
+}
+.learnbtn{
+    border-radius: 16px;
+}
+.custom-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+  }
+
+
+.navbtn{
+    border: 2px solid #9e9b9b;
+    font-family: "montserrat", sans-serif;
+    padding: 3px;
+}
+
+.offercardone {
+    position: relative;
+    color: black;
+    background-color: white;
+    transition: color 1s ease-in-out;
+ }
+
+  .offercardone::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: teal;
+    transition: height 0.5s ease-in-out;
+    z-index: 1; /* Lower z-index */
+  }
+  
+  .offercardone:hover {
+    color: white;
+  }
+  
+  .offercardone:hover::before {
+    height: 100%;
+  }
+  
+  .offercardone .content { /* Assuming your content has a class .content */
+    z-index: 2; /* Higher z-index */
+  }
+  .error{
+    color: red;
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+    
+  }
+
+.bi{
+  border: 2px solid white;
+}
+
+  
+
+
+
+  
+
+    

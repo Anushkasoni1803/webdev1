@@ -153,11 +153,11 @@ $(document).ready(function() {
             // Form is valid, submit it here
             alert("Form submitted!");
             return false; // Prevent default form submission
-        }
-        // errorPlacement: function(error, element) {
-        //     // error.insertAfter(element);
+        },
+        errorPlacement: function(error, element) {
+            error.insertBefore(element);
             
-        // }
+        }
        
     });
 });
